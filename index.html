@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Bootstrap</title>
+
+    <link
+      rel="stylesheet"
+      href="./assets/features/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/features/boxicons/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-white">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="#">Yuki Ilham</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="header-section" id="header">
+      <div class="container">
+        <div class="row align-item-center justify-content-between">
+          <div class="col-md-6 mt-5">
+            <h5 class="fw-semibold">Frontend Developer</h5>
+            <h1 class="header-title fw-bold">Hi,I'm <span>Yuki Ilham</span></h1>
+            <h2 class="fw-bold mb-5">From Bali, Indonesia</h2>
+            <div class="btn-container d-flex gap-3">
+              <button
+                type="button"
+                class="btn btn-md-1 fw-bold py-3"
+                onclick="location.href='mailto:yukiilham21@gmail.com'"
+              >
+                Hire Me
+              </button>
+              <button
+                type="button"
+                class="btn btn-md-2 fw-bold py-3"
+                onclick="location.href='#contact'"
+              >
+                Contact Info
+              </button>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 mt-5">
+              <div class="d-flex align-items-center">
+                <img
+                  src="./assets/image/linkedin.png"
+                  alt=""
+                  class="small-img"
+                  onclick="location.href='https://linkedin.com/in/yukiilhamramadani'"
+                />
+              </div>
+              <div class="d-flex align-items-center">
+                <img
+                  src="./assets/image/github.png"
+                  alt=""
+                  class="small-img"
+                  onclick="location.href='https://github.com/kiikxd'"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 order-md-last order-first">
+            <img src="./assets/image/profile-img.png" class="header-img" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <p class="text-orange fw-semibold mt-4">About</p>
+        <h2 class="section-title mb-5">get to know more</h2>
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-5">
+            <img
+              src="./assets/image/about-img.jpg"
+              class="header-img"
+              alt="Profile Picture"
+            />
+          </div>
+          <div class="col-md-7 mt-5 information-text">
+            <h5 class="fw-semibold">I'm Yuki Ilham</h5>
+            <p class="fw-bold">
+              Focus On <span>Frontend Development</span> based in
+              <span>Denpasar</span>
+            </p>
+            <p class="text-border">
+              I am an Informatics Management student at Bali State Polytechnic
+              with a strong foundation as a frontend development, including
+              developing a responsive website and arranging the appearance of
+              the website to make it look more attractive and easy to use.
+              proficient in programming languages such as HTML, CSS, JavaScript,
+              and PHP, and have hands-on experience with frameworks like
+              bootstrap, laravel.
+            </p>
+            <div class="btn-container d-flex">
+              <button
+                type="button"
+                class="btn btn-about fw-bold"
+                onclick="window.open('./assets/image/CV.pdf')"
+              >
+                Download CV
+                <i class="bx bx-download fw-bold ml-2"></i>
+              </button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <p class="text-orange fw-semibold">Projects</p>
+        <h2 class="section-title mb-5">Selected works</h2>
+
+        <div class="swiper portfolio-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="./assets/image/project-1.png"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Rock Paper Games</h6>
+                  <a href="https://kiikxd.github.io/rock-paper-games/" class="text-orange">Detail Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="./assets/image/project-2.png"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Restaurant Website</h6>
+                  <a href="https://kiikxd.github.io/Restaurant-Website/" class="text-orange">Detail Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="./assets/image/project-3.png"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Switch Clock</h6>
+                  <a href="https://kiikxd.github.io/clock-switch/" class="text-orange">Detail Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="./assets/image/project-4.png"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Emoji Star Widget</h6>
+                  <a href="https://kiikxd.github.io/emoji-star/" class="text-orange">Detail Portfolio</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="./assets/image/project-5.png"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Name Card Animation</h6>
+                  <a href="https://kiikxd.github.io/name-card-animation/" class="text-orange">Detail Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-end gap-3 mt-3">
+            <button
+              class="btn btn-light d-flex align-items-center justify-content-center btn-prev"
+            >
+              <i class="bx bx-left-arrow-alt fs-5"></i>
+            </button>
+            <button
+              class="btn btn-light d-flex align-items-center justify-content-center btn-next"
+            >
+              <i class="bx bx-right-arrow-alt fs-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6">
+            <p class="text-orange fw-semibold mt-4">Skills</p>
+            <h2 class="section-title text-white mb-5">Programming Skills</h2>
+
+            <div class="mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
+                <p class="text-white text-uppercase fw-bold mb-0">HTML</p>
+                <p class="text-white fw-semibold mb-0">Beginner</p>
+              </div>
+              <div class="progress-bar">
+                <span class="progress" style="width: 50%"></span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
+                <p class="text-white text-uppercase fw-bold mb-0">CSS</p>
+                <p class="text-white fw-semibold mb-0">Beginner</p>
+              </div>
+              <div class="progress-bar">
+                <span class="progress" style="width: 50%"></span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
+                <p class="text-white text-uppercase fw-bold mb-0">JavaScript</p>
+                <p class="text-white fw-semibold mb-0">Beginner</p>
+              </div>
+              <div class="progress-bar">
+                <span class="progress" style="width: 50%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 mt-3">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <p class="text-white text-uppercase fw-bold mb-0">PHP</p>
+              <p class="text-white fw-semibold mb-0">Beginner</p>
+            </div>
+            <div class="progress-bar">
+              <span class="progress" style="width: 50%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <p class="text-orange fw-semibold">Experience</p>
+        <h2 class="section-title mb-5">Organizational</h2>
+
+        <div class="row py-3 border-bottom">
+          <div class="col-md-4">KBUI</div>
+          <div class="col-md-4">Development of Interests & Talents</div>
+          <div class="col-md-4">December, 2022 - January, 2024</div>
+        </div>
+        <div class="row py-3 border-bottom">
+          <div class="col-md-4">IFC KBUI</div>
+          <div class="col-md-4">Publication & Documentation</div>
+          <div class="col-md-4">April, 2023 - November, 2023</div>
+        </div>
+        <div class="row py-3 border-bottom">
+          <div class="col-md-4">TAWABA KBUI</div>
+          <div class="col-md-4">Equipment & Security</div>
+          <div class="col-md-4">August, 2023 - September, 2023</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <p class="text-orange fw-semibold">Gallery</p>
+        <h2 class="section-title mb-5">Certificate</h2>
+
+        <div class="swiper portfolio-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="./assets/image/sertif-1.png"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Dicoding</h6>
+                  <p class="text-secondary fs-7">Mei 2024</p>
+                  <a
+                    class="text-orange"
+                    onclick="window.open('./assets/image/sertif-1.png')"
+                  >
+                    Detail Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="./assets/image/sertif-2.png"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Dicoding</h6>
+                  <p class="text-secondary fs-7">Juni 2024</p>
+                  <a
+                    class="text-orange"
+                    onclick="window.open('./assets/image/sertif-2.png')"
+                  >
+                    Detail Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="./assets/image/sertif-4.png"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Great Learning</h6>
+                  <p class="text-secondary fs-7">Mei 2024</p>
+                  <a
+                    class="text-orange"
+                    onclick="window.open('./assets/image/sertif-4.png')"
+                  >
+                    Detail Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="./assets/image/sertif-3.png"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Great Learning</h6>
+                  <p class="text-secondary fs-7">Mei 2024</p>
+                  <a
+                    class="text-orange"
+                    onclick="window.open('./assets/image/sertif-3.png')"
+                  >
+                    Detail Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="./assets/image/sertif-5.png"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">MySkill</h6>
+                  <p class="text-secondary fs-7">Mei 2024</p>
+                  <a class="text-orange"
+                  onclick="window.open('./assets/image/sertif-5.png')"
+                  >
+                  Detail Certificate
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-end gap-3 mt-3">
+            <button
+              class="btn btn-light d-flex align-items-center justify-content-center btn-prev"
+            >
+              <i class="bx bx-left-arrow-alt fs-5"></i>
+            </button>
+            <button
+              class="btn btn-light d-flex align-items-center justify-content-center btn-next"
+            >
+              <i class="bx bx-right-arrow-alt fs-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6">
+            <p class="text-orange fw-semibold">Contact</p>
+            <h2 class="section-title mb-4">Get In Touch</h2>
+
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bx bx-phone-call text-orange fs-5"></i>
+              <div class="mb-0">+62 0821349728</div>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bx bx-envelope text-orange fs-5"></i>
+              <div class="mb-0">yukiilham@gmail.com</div>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bx bx-map-pin text-orange fs-5"></i>
+              <div class="mb-0">Denpasar, Bali</div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <form action="mailto:yukiilham21@gmail.com" method="post" enctype="text/plain">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="name"
+                class="form-control rounded-0 mb-2"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email"
+                class="form-control rounded-0 mb-2"
+              />
+              <textarea
+                name="body"
+                id="body"
+                placeholder="Message"
+                cols="30"
+                rows="3"
+                class="form-control rounded-0 mb-3"
+              ></textarea>
+              <button class="btn btn-orange w-100">
+                Submit
+            </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-3">
+      <div class="container d-flex justify-content-center ">
+        <p class="text-white fs-7 mb-0">Copyright &copy; 2024 Yuki Ilham</p>
+      </div>
+    </footer>
+
+    <script src="./assets/features/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".portfolio-swiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".btn-next",
+          prevEl: ".btn-prev",
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+            paceBetween: 20,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
